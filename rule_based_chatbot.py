@@ -39,7 +39,7 @@ def get_bot_response(user_input):
     elif "joke" in user_input:
         jokes = [
             "Why do programmers prefer dark mode? Because light attracts bugs! 💡🐛",
-            #"Why don’t bachelors like Git? Because they are afraid to commit! 😂",
+            "Why don’t bachelors like Git? Because they are afraid to commit! 😂",
             #"Why did the computer go to the doctor? Because it had a virus! 🤒",
             #"Why did the developer go broke? Because they used up all their cache! 💸",
         ]
@@ -58,17 +58,22 @@ def get_bot_response(user_input):
             "- Cheer you up when you're sad 🌈\n"
             "- Tell you a joke 😂\n"
             "- Chat casually and respond to feelings\n"
-            "- Do basic calculations like 2 + 2 ➕"
+            "- Do basic calculations "
         )
-
+    
     elif any(op in user_input for op in ['+', '-', '*', '/']):
         try:
-            result = eval(user_input)
+            if "calculate" in user_input:
+                expression = user_input.replace("calculate", "").strip()
+            else:
+                expression = user_input.strip()
+
+            result = eval(expression)
             return f"The answer is: {result}"
         except:
             return "Oops! I couldn't calculate that. Please check the expression."
         
-    elif "bye" in user_input:
+    elif "bye" in user_input or "see you" in user_input or "goodbye" in user_input:
         return "Goodbye! 👋 It was nice chatting with you. Have a great day!"
     
     else:
