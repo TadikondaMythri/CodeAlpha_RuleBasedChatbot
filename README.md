@@ -2,6 +2,7 @@
 
 ## ✅ Project Description
 This is a **Rule-Based Chatbot** built in Python as part of my internship with CodeAlpha(https://www.linkedin.com/company/codealpha-internship/). 
+
 The chatbot is designed to respond to specific keywords, simulate conversation, and provide basic features like jokes, time/date, emotional support, and simple math calculations.
 
 ---
@@ -33,7 +34,7 @@ python chatbot.py
 ---
 
 ## 📽️ Demo Video
-🔗 Watch Demo on LinkedIn (link will be added soon)
+🔗 Watch Demo on LinkedIn (https://www.linkedin.com/posts/mythri-tadikonda-82308234a_codealpha-pythoninternship-chatbot-activity-7338119794400915458-GLUY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFc4OhsBb_gpnQHhjODr8VKJ9eQrypsHVlk)
 
 ---
 
